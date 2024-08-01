@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Explore</title>
+  <style>
+  h1 {text-align: center;}
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+    width: 50%;
+    margin: auto;
+  }
+
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float five columns side by side */
+.tour {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+}
+
+/* Float ten columns side by side */
+.artist {
+  float: left;
+  width: 12.5%;
+  padding: 0 3px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+  </style>
+</head>
+<body>
+    <%- include ('partials/navbar.ejs') %>
+<h1>Whats new</h1>
+<div class="container">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+
+      <div class="item active">
+        <img src="https://static.semrush.com/blog/uploads/media/8b/06/8b063f735e2192a61c6861f4755ffc5d/what-is-digital-advertising.svg" alt="ads" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Advertiment</h3>
+          <p>description of advertisment</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://static.semrush.com/blog/uploads/media/8b/06/8b063f735e2192a61c6861f4755ffc5d/what-is-digital-advertising.svg" alt="ads" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Advertiment</h3>
+          <p>description of advertisment</p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="https://static.semrush.com/blog/uploads/media/8b/06/8b063f735e2192a61c6861f4755ffc5d/what-is-digital-advertising.svg" alt="ads" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Advertiment</h3>
+          <p>description of advertisment</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="https://static.semrush.com/blog/uploads/media/8b/06/8b063f735e2192a61c6861f4755ffc5d/what-is-digital-advertising.svg" alt="ads" width="460" height="345">
+        <div class="carousel-caption">
+          <h3>Advertiment</h3>
+          <p>description of advertisment</p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<br>
+<br>
+<h1>Artist on Tour</h1>
+
+<div class="row">
+    <div class="tour">
+      <div class="card">
+          <img src="https://i.scdn.co/image/ab67706f0000000252feef11af8c9d412769ec5a" alt="Taylor Swift" style="width:100%">
+        <h3>Taylor Swift</h3>
+        <p>/Tour Name</p>
+      </div>
+    </div>
+  
+    <div class="tour">
+      <div class="card">
+          <img src="https://i.scdn.co/image/ab67706f00000002256e5fd2d2b6df5b9e98ac4e" alt="The Weeknd" style="width:100%">
+        <h3>The Weeknd</h3>
+        <p>/Tour Name</p>
+      </div>
+    </div>
+    
+    <div class="tour">
+      <div class="card">
+          <img src="https://i.scdn.co/image/ab67706f000000027a755a1c415eb319e5d91c50" alt="Billie Eilish" style="width:100%">
+        <h3>Billie Eilish</h3>
+        <p>/Tour Name</p>
+      </div>
+    </div>
+    
+    <div class="tour">
+      <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgLzUX6YJQ9CotV4ZC_RBzO_9VdHar0_PN_A&s" alt="Post Malone" style="width:100%">
+        <h3>Post Malone</h3>
+        <p>/Tour Name</p>
+      </div>
+    </div>
+    <div class="tour">
+      <div class="card">
+          <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO3by276-default.jpg" alt="Rihanna" style="width:100%">
+        <h3>Rihanna</h3>
+        <p>/Tour Name</p>
+      </div>
+  </div>
+</div>
+<br>
+<br>
+<h1>All About</h1>
+<div class="row">
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/1URnnhqYAYcrqrcwql10ft">
+          <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO152G0U-default.jpg" alt="21 Savage" style="width:100%">
+        </a>
+      </div>
+    </div>
+  
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/4dpARuHxo51G3z768sgnrY">
+          <img src="https://pbs.twimg.com/media/E99FvuPXsAEpwwM.jpg" alt="Adele" style="width:100%">
+        </a>
+        </div>
+    </div>
+    
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/playlist/37i9dQZF1DX2apWzyECwyZ">
+          <img src="https://i.scdn.co/image/ab67706f000000029c0eb2fdff534f803ea018e1" alt="Bad bunny" style="width:100%">
+        </a>
+        </div>
+    </div>
+    
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/6vWDO969PvNqNYHIOW5v0m">
+          <img src="https://i.scdn.co/image/ab67706f000000023949408f182f99b49dc22ea9" alt="Beyoncé" style="width:100%">
+        </a>
+        </div>
+    </div>
+
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/6qqNVTkY8uBg9cP3Jd7DAH">
+          <img src="https://i.scdn.co/image/ab67706f000000027a755a1c415eb319e5d91c50" alt="Billie Eilish" style="width:100%">
+        </a>
+        </div>
+    </div>
+
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/0du5cEVh5yTK9QJze8zA0C">
+          <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO03DwPK-default.jpg" alt="Bruno Mars" style="width:100%">
+        </a>
+        </div>
+    </div>
+  
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/5cj0lLjcoR7YOSnhnX0Po5">
+          <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO33svt5-default.jpg" alt="Doja Cat" style="width:100%">
+        </a>
+        </div>
+    </div>
+    
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/3TVXtAsR1Inumwj472S9r4">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1ggFGAmrE8tUVL2rML2bst5tUKjq5qfHEAw&s" alt="Drake" style="width:100%">
+        </a>
+        </div>
+    </div>
+    
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V">
+          <img src="https://i.scdn.co/image/ab67706f000000021d5bbda37b600608832909bc" alt="Ed Sheeran" style="width:100%">
+        </a>
+        </div>
+    </div>
+
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/26VFTg2z8YR0cCuwLzESi2">
+          <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO1ciP4I-default.jpg" alt="Halsey" style="width:100%">
+        </a>      
+        </div>
+    </div>
+
+        <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/6KImCVD70vtIoJWnq6nGn3">
+          <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO3ZsXzq-default.jpg" alt="Harry Styles" style="width:100%">
+        </a>
+      </div>
+    </div>
+  
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/1uNFoZAHBGtllmzznpCI3s">
+          <img src="https://i.scdn.co/image/ab67706f000000029cf2e21a96f217de5d3abf60" alt="Justin Bieber" style="width:100%">
+        </a>
+      </div>
+    </div>
+    
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/31TPClRtHm23RisEBtV3X7">
+          <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO1KAa52-default.jpg" alt="Justin Timberlake" style="width:100%">
+        </a>
+      </div>
+    </div>
+    
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x">
+          <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO3nMr04-default.jpg" alt="Kanye West" style="width:100%">
+        </a>
+      </div>
+    </div>
+
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/6jJ0s89eD6GaHleKKya26X">
+          <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO3Jefw4-default.jpg" alt="Katy Perry" style="width:100%">
+        </a>
+      </div>
+    </div>
+
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/5f7VJjfbwm532GiveGC0ZK">
+          <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO359MM7-default.jpg" alt="Lil Baby" style="width:100%">
+        </a>
+      </div>
+    </div>
+  
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/5YGY8feqx7naU7z4HrwZM6">
+          <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO3wzrW0-default.jpg" alt="Miley Cyrus" style="width:100%">
+        </a>
+      </div>
+    </div>
+    
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/4oUHIQIBe0LHzYfvXNW4QM">
+          <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO2zJOi2-default.jpg" alt="Morgan Wallen" style="width:100%">
+        </a>
+      </div>
+    </div>
+    
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/0hCNtLu0JehylgoiP8L4Gh">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYz8GfNzSoZ7yTGCtyV7YV1ObsUxIxwqwblg&s" alt="Nicki Minaj" style="width:100%">
+        </a>
+      </div>
+    </div>
+
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/1McMsnEElThX1knmY4oliG">
+          <img src="https://i.scdn.co/image/ab67706f000000026e224c85c66463953694e5a1" alt="Olivia Rodrigo" style="width:100%">
+        </a>
+      </div>
+    </div>
+
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60">
+          <img src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO1aBeik-default.jpg" alt="Post Malone" style="width:100%">
+        </a>
+      </div>
+    </div>
+    
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/0C8ZW7ezQVs4URX5aX7Kqx">
+          <img src="https://i.scdn.co/image/ab67706f000000027cda1a881997b0bb1ca0eb92" alt="Selena Gomez" style="width:100%">
+        </a>
+      </div>
+    </div>
+    
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02">
+          <img src="https://i.scdn.co/image/ab67706f0000000252feef11af8c9d412769ec5a" alt="Taylor Swift" style="width:100%">
+        </a>
+      </div>
+    </div>
+
+    <div class="artist">
+      <div class="card">
+        <a href="https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ">
+          <img src="https://i.scdn.co/image/ab67706f00000002256e5fd2d2b6df5b9e98ac4e" alt="The Weeknd" style="width:100%">
+        </a>
+      </div>
+    </div>
+</div>
+</body>
+</html>
